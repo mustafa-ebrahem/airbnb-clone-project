@@ -135,3 +135,24 @@ Protecting the booking system prevents unauthorized modifications to reservation
 
 #### API Endpoint Protection
 Securing API endpoints against unauthorized access and attacks prevents data leakage, service disruption, and maintains the overall system integrity. This is especially important for public-facing APIs that may be targeted by automated attacks.
+
+## CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) automates the process of integrating, testing, and deploying code changes. This approach is crucial for maintaining code quality and enabling rapid, reliable updates to the application.
+
+### Key Benefits for the Project
+
+- **Automated Testing**: Every code change is automatically tested, ensuring that new features don't break existing functionality
+- **Consistent Deployments**: Standardized deployment process reduces human error and ensures consistent environments
+- **Faster Release Cycles**: Automates manual processes, allowing for more frequent and reliable releases
+- **Early Bug Detection**: Issues are identified early in the development cycle, reducing the cost and time to fix
+
+### Implementation Tools
+
+- **GitHub Actions**: Workflow automation directly integrated with the GitHub repository
+- **Docker**: Container-based deployment ensures consistency across development and production environments
+- **pytest**: Automated testing framework for Python code
+- **flake8/black**: Code linting and formatting to maintain code quality standards
+- **Ansible/Terraform**: Infrastructure as code for managing deployment environments
+
+The CI/CD pipeline will automate building, testing, and deploying the Airbnb clone application, creating a streamlined workflow from development to production while maintaining high quality standards.
