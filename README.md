@@ -1,11 +1,11 @@
-# airbnb-clone-project
+# 🏠 airbnb-clone-project
 
-## Brief Overview
+## 📝 Brief Overview
 
 This project as the name suggests, will be a clone of the infamous airbnb, but it is backend oriented, this is part of the ProDev Backend Software engineering program. I will be using Django, Javascript and PostgreSQL as the main tech stack, there will be some more like Graphql, Redis, Celery, Docker and CI/CD Pipelines.
 
 
-## Team Roles
+## 👥 Team Roles
 
 ### for team roles, currently its just me, but even for a solo developer i have to take different roles at the same time, the following roles is the perfect scenario and not reality
 
@@ -26,7 +26,7 @@ this may vary depending on company size, culture and available personnal
 
 
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 - **Django**: A high-level Python web framework for building the RESTful API and backend systems
 - **Django REST Framework**: Toolkit for creating powerful and flexible RESTful APIs
@@ -38,18 +38,18 @@ this may vary depending on company size, culture and available personnal
 - **Docker**: Containerization platform for consistent development and deployment
 - **CI/CD Pipelines**: Automated workflows for testing and deployment
 
-## Database Design
+## 💾 Database Design
 
 ### Key Entities and Relationships
 
-#### Users
+#### 👤 Users
 - **Fields**: username, email, password, profile_picture, date_joined
 - **Relationships**: 
   - A User can own multiple Properties (as a host)
   - A User can make multiple Bookings (as a guest)
   - A User can leave multiple Reviews
 
-#### Properties
+#### 🏘️ Properties
 - **Fields**: title, description, location, price_per_night, available_dates
 - **Relationships**: 
   - A Property belongs to a User (host)
@@ -57,86 +57,86 @@ this may vary depending on company size, culture and available personnal
   - A Property can have multiple Reviews
   - A Property can have multiple Images
 
-#### Bookings
+#### 📅 Bookings
 - **Fields**: check_in_date, check_out_date, total_price, status, guests_count
 - **Relationships**: 
   - A Booking belongs to a User (guest)
   - A Booking belongs to a Property
   - A Booking can have one Payment
 
-#### Reviews
+#### ⭐ Reviews
 - **Fields**: rating, comment, date_posted, review_title
 - **Relationships**: 
   - A Review belongs to a User
   - A Review belongs to a Property
   - A Review is associated with a Booking
 
-#### Payments
+#### 💰 Payments
 - **Fields**: amount, payment_date, payment_method, status
 - **Relationships**: 
   - A Payment belongs to a Booking
   - A Payment belongs to a User (guest)
 
-## Feature Breakdown
+## ✨ Feature Breakdown
 
-### User Management
+### 👤 User Management
 User registration, authentication, and profile management system. This feature enables secure account creation, login functionality, and allows users to maintain their profiles with personal information and preferences.
 
-### Property Management
+### 🏘️ Property Management
 CRUD operations for property listings including details like location, pricing, and availability. This system allows hosts to create and manage their property listings with descriptions, images, amenities, and house rules.
 
-### Booking System
+### 📅 Booking System
 Calendar-based reservation system with availability tracking and booking confirmation. This feature handles the complete booking process from searching available dates to confirming reservations, and manages the communications between guests and hosts.
 
-### Payment Processing
+### 💰 Payment Processing
 Secure payment handling for bookings with transaction history. This system processes and records payments between guests and hosts while maintaining payment records and handling refunds when necessary.
 
-### Review System
+### ⭐ Review System
 Rating and feedback mechanism for properties and hosts. This feature allows guests to share their experiences through ratings and comments, helping future guests make informed decisions and hosts improve their offerings.
 
-### Search & Filtering
+### 🔍 Search & Filtering
 Advanced search capabilities with multiple filters for finding properties. This system enables users to find suitable accommodations based on location, price range, amenities, dates, and other criteria to enhance the user experience.
 
-### Notification System
+### 📣 Notification System
 Automated alerts for booking confirmations, messages, and other important events. This feature keeps users informed about their bookings, messages from other users, and important updates through email or in-app notifications.
 
-## API Security
+## 🔒 API Security
 
 ### Key Security Measures
 
-#### Authentication & Authorization
+#### 🔐 Authentication & Authorization
 - **JWT (JSON Web Tokens)**: Secure token-based authentication system to verify user identity
 - **Role-Based Access Control**: Different access levels for guests, hosts, and administrators
 - **OAuth 2.0**: Support for third-party authentication providers for secure and convenient login
 
-#### Data Protection
+#### 🛡️ Data Protection
 - **HTTPS/TLS**: Encrypted connections for all API communications
 - **Data Encryption**: Sensitive information like passwords and payment details stored with strong encryption
 - **Input Validation**: Comprehensive validation of all user inputs to prevent injection attacks
 
-#### Rate Limiting & Throttling
+#### 🚦 Rate Limiting & Throttling
 - **Request Rate Limiting**: Protection against brute force and DDoS attacks
 - **Account Lockout Policies**: Temporary lockout after multiple failed authentication attempts
 - **API Usage Quotas**: Limiting requests per user to ensure fair usage and system stability
 
 ### Security Importance by Area
 
-#### User Data Protection
+#### 👤 User Data Protection
 Securing personal information is paramount as the platform stores sensitive user details including contact information and location data. Breaches could lead to identity theft or unauthorized account access, damaging user trust and potentially violating data protection regulations.
 
-#### Payment Security
+#### 💳 Payment Security
 The payment processing system handles financial transactions between guests and hosts, making it a high-value target. Strong security measures prevent unauthorized transactions, protect banking information, and ensure compliance with PCI DSS standards.
 
-#### Property Listing Integrity
+#### 🏘️ Property Listing Integrity
 Security measures ensure that only authorized users can create, modify, or delete property listings. This maintains the reliability of the platform and prevents fraudulent listings that could harm the platform's reputation or lead to financial losses for users.
 
-#### Booking System Security
+#### 📅 Booking System Security
 Protecting the booking system prevents unauthorized modifications to reservations that could result in financial losses, double bookings, or denied service. Security here ensures the reliability of the core business functionality.
 
-#### API Endpoint Protection
+#### 🔌 API Endpoint Protection
 Securing API endpoints against unauthorized access and attacks prevents data leakage, service disruption, and maintains the overall system integrity. This is especially important for public-facing APIs that may be targeted by automated attacks.
 
-## CI/CD Pipeline
+## 🚀 CI/CD Pipeline
 
 Continuous Integration and Continuous Deployment (CI/CD) automates the process of integrating, testing, and deploying code changes. This approach is crucial for maintaining code quality and enabling rapid, reliable updates to the application.
 
