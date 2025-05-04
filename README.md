@@ -99,3 +99,39 @@ Advanced search capabilities with multiple filters for finding properties. This 
 
 ### Notification System
 Automated alerts for booking confirmations, messages, and other important events. This feature keeps users informed about their bookings, messages from other users, and important updates through email or in-app notifications.
+
+## API Security
+
+### Key Security Measures
+
+#### Authentication & Authorization
+- **JWT (JSON Web Tokens)**: Secure token-based authentication system to verify user identity
+- **Role-Based Access Control**: Different access levels for guests, hosts, and administrators
+- **OAuth 2.0**: Support for third-party authentication providers for secure and convenient login
+
+#### Data Protection
+- **HTTPS/TLS**: Encrypted connections for all API communications
+- **Data Encryption**: Sensitive information like passwords and payment details stored with strong encryption
+- **Input Validation**: Comprehensive validation of all user inputs to prevent injection attacks
+
+#### Rate Limiting & Throttling
+- **Request Rate Limiting**: Protection against brute force and DDoS attacks
+- **Account Lockout Policies**: Temporary lockout after multiple failed authentication attempts
+- **API Usage Quotas**: Limiting requests per user to ensure fair usage and system stability
+
+### Security Importance by Area
+
+#### User Data Protection
+Securing personal information is paramount as the platform stores sensitive user details including contact information and location data. Breaches could lead to identity theft or unauthorized account access, damaging user trust and potentially violating data protection regulations.
+
+#### Payment Security
+The payment processing system handles financial transactions between guests and hosts, making it a high-value target. Strong security measures prevent unauthorized transactions, protect banking information, and ensure compliance with PCI DSS standards.
+
+#### Property Listing Integrity
+Security measures ensure that only authorized users can create, modify, or delete property listings. This maintains the reliability of the platform and prevents fraudulent listings that could harm the platform's reputation or lead to financial losses for users.
+
+#### Booking System Security
+Protecting the booking system prevents unauthorized modifications to reservations that could result in financial losses, double bookings, or denied service. Security here ensures the reliability of the core business functionality.
+
+#### API Endpoint Protection
+Securing API endpoints against unauthorized access and attacks prevents data leakage, service disruption, and maintains the overall system integrity. This is especially important for public-facing APIs that may be targeted by automated attacks.
