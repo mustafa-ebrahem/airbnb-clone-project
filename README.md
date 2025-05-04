@@ -76,3 +76,26 @@ this may vary depending on company size, culture and available personnal
 - **Relationships**: 
   - A Payment belongs to a Booking
   - A Payment belongs to a User (guest)
+
+## Feature Breakdown
+
+### User Management
+User registration, authentication, and profile management system. This feature enables secure account creation, login functionality, and allows users to maintain their profiles with personal information and preferences.
+
+### Property Management
+CRUD operations for property listings including details like location, pricing, and availability. This system allows hosts to create and manage their property listings with descriptions, images, amenities, and house rules.
+
+### Booking System
+Calendar-based reservation system with availability tracking and booking confirmation. This feature handles the complete booking process from searching available dates to confirming reservations, and manages the communications between guests and hosts.
+
+### Payment Processing
+Secure payment handling for bookings with transaction history. This system processes and records payments between guests and hosts while maintaining payment records and handling refunds when necessary.
+
+### Review System
+Rating and feedback mechanism for properties and hosts. This feature allows guests to share their experiences through ratings and comments, helping future guests make informed decisions and hosts improve their offerings.
+
+### Search & Filtering
+Advanced search capabilities with multiple filters for finding properties. This system enables users to find suitable accommodations based on location, price range, amenities, dates, and other criteria to enhance the user experience.
+
+### Notification System
+Automated alerts for booking confirmations, messages, and other important events. This feature keeps users informed about their bookings, messages from other users, and important updates through email or in-app notifications.
